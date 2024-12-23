@@ -17,42 +17,33 @@
             color: #333;
             background-color: #f4f4f4;
             display: flex;
-            justify-content: center; /* Centers content horizontally */
-            align-items: center; /* Centers content vertically */
-            min-height: 50vh; /* Ensure body height spans full viewport */
-            margin: 0; /* Remove default browser margin */
-            background-color: #f4f4f4; /* Optional: Add a neutral background for contrast */
-        }
-
-        .center-container {
-            text-align: center; /* Center the text within the container */
-        }
-
-        h1 {
-            margin-bottom: 20px; /* Add some spacing between the heading and the table */
-            color: #2c3e50; /* Optional: Change the text color */
+            flex-direction: column; /* Arrange elements vertically */
+            min-height: 100vh; /* Full viewport height */
         }
 
         a {
             text-decoration: none;
             color: inherit;
         }
+
         /* Header and Navigation */
         header {
             background: #2c3e50;
             color: white;
             display: flex;
-            justify-content: center;
+            justify-content: center; /* Center navigation links */
             align-items: center;
             padding: 20px;
             position: sticky;
             top: 0;
             z-index: 1000;
         }
+
         nav {
             display: flex;
-            gap: 30px;
+            gap: 30px; /* Space between navigation links */
         }
+
         nav a {
             font-size: 18px;
             color: white;
@@ -60,20 +51,56 @@
             font-weight: 600;
             transition: color 0.3s;
         }
+
         nav a:hover {
             color: #e74c3c;
+        }
+
+        /* Main Content */
+        .center-container {
+            flex: 1; /* Takes remaining space */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+            justify-content: center; /* Center content vertically */
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 75%;
+            background-color: powderblue;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        table td {
+            padding: 10px;
+            border: 1px solid ;
+        }
+
+        table img {
+            display: block;
+            margin: auto;
+            width: 100px;
+            height: 120px;
         }
 
         footer {
             background: #2c3e50;
             color: white;
             text-align: center;
-            padding: 10px ;
-            font-size: 1rem;
+            padding: 10px;
         }
     </style>
 </head>
-<body >
+<body>
+    <!-- Header -->
     <header>
         <nav>
             <a href="biodata.html">About</a>
@@ -81,13 +108,15 @@
             <a href="campuslife.html">Campus Life</a>
         </nav>
     </header>
+
+    <!-- Content -->
     <div class="center-container">
         <h1>My Biodata</h1>
-        <table border="1" style="width: 50%; background-color: powderblue;" width="100" height="700">
+        <table>
             <tr>
                 <td><b>Name</b></td>
                 <td>Nurul Jannah</td>
-                <td><img src="me.jpg" style="width:100px; height:120px"></td>
+                <td><img src="me.jpg" alt="Profile Picture"></td>
             </tr>
             <tr>
                 <td><b>Date Of Birth</b></td>
@@ -129,7 +158,7 @@
             </tr>
             <tr>
                 <td>Website</td>
-                <td><a href="https://github.com/JannahKZ/Lab_2">www.JannahKZ.com</a></td>
+                <td><a href="https://github.com/JannahKZ/Lab_2" target="_blank">www.JannahKZ.com</a></td>
             </tr>
             <tr>
                 <td><b>Course And Institution</b></td>
@@ -149,6 +178,10 @@
             </tr>
         </table>
     </div>
-    <footer><p>&copy; 2024 Nurul Jannah</p></footer>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Nurul Jannah</p>
+    </footer>
 </body>
 </html>
