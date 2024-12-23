@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campus Life | Nurul Jannah | UTHM</title>
 
+    <!-- External Stylesheets and Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
         * {
             margin: 0;
@@ -19,7 +22,7 @@
             color: #333;
             background-color: #f4f4f4;
             display: flex;
-            flex-direction: column; /* Arrange elements vertically */
+            flex-direction: column;
             min-height: 100vh;
         }
 
@@ -33,7 +36,7 @@
             background: #2c3e50;
             color: white;
             display: flex;
-            justify-content: center; /* Center navigation links */
+            justify-content: center;
             align-items: center;
             padding: 20px;
             position: sticky;
@@ -43,7 +46,7 @@
 
         nav {
             display: flex;
-            gap: 30px; /* Space between navigation links */
+            gap: 30px;
         }
 
         nav a {
@@ -64,17 +67,17 @@
             background-size: cover;
             background-position: center;
             height: 60vh;
-            display: flex; /* Flexbox for centering content */
+            display: flex;
             flex-direction: column;
-            justify-content: center; /* Center vertically */
-            align-items: center; /* Center horizontally */
+            justify-content: center;
+            align-items: center;
             text-align: center;
             color: white;
             padding: 20px;
         }
 
         .hero h1 {
-            font-size: 40px; /* Font size in px */
+            font-size: 40px;
             font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -83,35 +86,39 @@
 
         /* Main Content Section */
         main {
-            flex: 1; /* Makes main content take remaining space */
+            flex: 1;
             padding: 40px 20px;
             background-color: white;
-            display: flex;
-            flex-direction: column; /* Stack content vertically */
-            gap: 40px; /* Space between sections */
-            align-items: center;
         }
 
         .main-title {
             text-align: center;
-            font-size: 36px; /* Font size in px */
+            font-size: 36px;
             font-weight: 700;
             color: #2c3e50;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+            justify-content: center;
+            gap: 40px; /* Space between items */
         }
 
         .gallery-section {
             display: flex;
-            flex-direction: column;
-            gap: 20px; /* Space between image and text */
-            align-items: center; /* Center content horizontally */
-            text-align: center;
-            max-width: 600px; /* Limit content width */
+            flex-direction: column; /* Stack image and text vertically */
+            align-items: center;
+            max-width: 350px; /* Keep gallery sections consistent in width */
+            text-align: justify; /* Justify the text for alignment */
+            font-size: 16px;
+            color: #7f8c8d;
         }
 
         .gallery-section img {
-            width: 100%; /* Responsive image */
-            max-width: 280px; /* Max size in px */
+            width: 100%; /* Image fills the gallery section width */
+            max-width: 420px; /* 1.5x original size (280px) */
             height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -122,12 +129,6 @@
             transform: scale(1.05);
         }
 
-        .gallery-section p {
-            font-size: 16px; /* Font size in px */
-            color: #7f8c8d;
-        }
-
-        /* Footer */
         footer {
             background: #2c3e50;
             color: white;
@@ -155,26 +156,25 @@
     <!-- Main Content -->
     <main>
         <h2 class="main-title">My Campus Life</h2>
-
-        <div class="gallery-section">
-            <img src="homies.jpg" alt="Roommates">
-            <p>
-                I am so grateful to have met my roommates, Khairina, Fatin, Rabiatul, and Solehah. They have made my life so much brighter with their kindness, support, and laughter. Living together has created beautiful memories, from sharing meals and stories to helping each other through tough times. They’re more than just roommates—they’re my second home.
-            </p>
-        </div>
-
-        <div class="gallery-section">
-            <img src="classmates.jpg" alt="Classmates">
-            <p>
-                I’m so thankful for my classmates who became my besties. At first, we were just sharing notes, group projects, and laughs during class, but over time, we became so much closer. They’ve turned the ordinary days into extraordinary memories, and I couldn’t ask for better friends.
-            </p>
-        </div>
-
-        <div class="gallery-section">
-            <img src="semarak.jpg" alt="SEMARAK Team">
-            <p>
-                Joining Sekretariat Mahasiswa Anak Perak (SEMARAK) has been a transformative experience for me. Through SEMARAK, I’ve gained valuable knowledge about leadership, teamwork, and collaboration. This organization has been an essential part of my growth.
-            </p>
+        <div class="gallery">
+            <div class="gallery-section">
+                <img src="homies.jpg" alt="Roommates">
+                <p>
+                    I am so grateful to have met my roommates, Khairina, Fatin, Rabiatul, and Solehah. They have made my life so much brighter with their kindness, support, and laughter. Living together has created beautiful memories, from sharing meals and stories to helping each other through tough times. They’re more than just roommates—they’re my second home.
+                </p>
+            </div>
+            <div class="gallery-section">
+                <img src="classmates.jpg" alt="Classmates">
+                <p>
+                    I’m so thankful for my classmates who became my besties. At first, we were just sharing notes, group projects, and laughs during class, but over time, we became so much closer. They’ve turned the ordinary days into extraordinary memories, and I couldn’t ask for better friends.
+                </p>
+            </div>
+            <div class="gallery-section">
+                <img src="semarak.jpg" alt="SEMARAK Team">
+                <p>
+                    Joining Sekretariat Mahasiswa Anak Perak (SEMARAK) has been a transformative experience for me. Through SEMARAK, I’ve gained valuable knowledge about leadership, teamwork, and collaboration. This organization has been an essential part of my growth.
+                </p>
+            </div>
         </div>
     </main>
 
