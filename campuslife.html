@@ -100,25 +100,23 @@
         }
 
         .gallery {
-            display: flex;
-            flex-wrap: wrap; /* Ensure it wraps on smaller screens */
-            justify-content: center;
+            display: flex; /* Align items side-by-side */
             gap: 40px; /* Space between items */
+            justify-content: center; /* Center gallery items */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
         }
 
         .gallery-section {
             display: flex;
-            flex-direction: column; /* Stack image and text vertically */
-            align-items: center;
-            max-width: 350px; /* Keep gallery sections consistent in width */
-            text-align: justify; /* Justify the text for alignment */
-            font-size: 16px;
-            color: #7f8c8d;
+            flex-direction: column; /* Stack image and text */
+            align-items: center; /* Center image and text */
+            max-width: 420px;
+            text-align: justify;
         }
 
         .gallery-section img {
-            width: 100%; /* Image fills the gallery section width */
-            max-width: 420px; /* 1.5x original size (280px) */
+            width: 100%; /* Image fills its container */
+            max-width: 420px; /* 1.5x larger */
             height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -127,6 +125,12 @@
 
         .gallery-section img:hover {
             transform: scale(1.05);
+        }
+
+        .gallery-section p {
+            margin-top: 15px;
+            font-size: 16px;
+            color: #7f8c8d;
         }
 
         footer {
@@ -157,18 +161,23 @@
     <main>
         <h2 class="main-title">My Campus Life</h2>
         <div class="gallery">
+            <!-- Roommates Section -->
             <div class="gallery-section">
                 <img src="homies.jpg" alt="Roommates">
                 <p>
                     I am so grateful to have met my roommates, Khairina, Fatin, Rabiatul, and Solehah. They have made my life so much brighter with their kindness, support, and laughter. Living together has created beautiful memories, from sharing meals and stories to helping each other through tough times. They’re more than just roommates—they’re my second home.
                 </p>
             </div>
+
+            <!-- Classmates Section -->
             <div class="gallery-section">
                 <img src="classmates.jpg" alt="Classmates">
                 <p>
                     I’m so thankful for my classmates who became my besties. At first, we were just sharing notes, group projects, and laughs during class, but over time, we became so much closer. They’ve turned the ordinary days into extraordinary memories, and I couldn’t ask for better friends.
                 </p>
             </div>
+
+            <!-- SEMARAK Section -->
             <div class="gallery-section">
                 <img src="semarak.jpg" alt="SEMARAK Team">
                 <p>
