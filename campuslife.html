@@ -100,38 +100,38 @@
         }
 
         .gallery {
-            display: flex; /* Align items side-by-side */
-            gap: 40px; /* Space between items */
-            justify-content: center; /* Center gallery items */
-            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            display: flex; /* Align items horizontally */
+            gap: 20px; /* Add space between items */
+            justify-content: center; /* Center the items in the container */
+            flex-wrap: wrap; /* Allow items to wrap if viewport is too small */
         }
 
         .gallery-section {
-            display: flex;
-            flex-direction: column; /* Stack image and text */
-            align-items: center; /* Center image and text */
-            max-width: 420px;
-            text-align: justify;
+            text-align: center;
+            width: 300px; /* Optional: Set a width for each gallery item */
+            flex-shrink: 0; /* Ensure all items maintain their size */
         }
 
         .gallery-section img {
-            width: 100%; /* Image fills its container */
-            max-width: 420px; /* 1.5x larger */
-            height: auto;
+            width: 100%; /* Make image fill the container */
+            max-width: 300px; /* Adjust the size of the images */
+            height: auto; /* Preserve aspect ratio */
             border-radius: 8px;
+            margin-bottom: 10px; /* Add space below image */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out;
         }
 
         .gallery-section img:hover {
-            transform: scale(1.05);
+            transform: scale(1.05); /* Add a zoom effect on hover */
         }
 
         .gallery-section p {
-            margin-top: 15px;
-            font-size: 16px;
+            font-size: 14px;
             color: #7f8c8d;
+            text-align: justify; /* Justify the paragraph text */
         }
+
 
         footer {
             background: #2c3e50;
