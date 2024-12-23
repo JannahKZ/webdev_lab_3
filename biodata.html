@@ -5,6 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Nurul Jannah | UTHM</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center; /* Centers content horizontally */
+            align-items: center; /* Centers content vertically */
+            min-height: 50vh; /* Ensure body height spans full viewport */
+            margin: 0; /* Remove default browser margin */
+            background-color: #f4f4f4; /* Optional: Add a neutral background for contrast */
+        }
+
+        .center-container {
+            text-align: center; /* Center the text within the container */
+        }
+
+        h1 {
+            margin-bottom: 20px; /* Add some spacing between the heading and the table */
+            color: #2c3e50; /* Optional: Change the text color */
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
         /* Header and Navigation */
         header {
             background: #2c3e50;
@@ -16,10 +48,6 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-        }
-        header .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
         }
         nav {
             display: flex;
@@ -40,90 +68,87 @@
             background: #2c3e50;
             color: white;
             text-align: center;
-            padding: 40px 20px;
+            padding: 10px ;
             font-size: 1rem;
         }
     </style>
 </head>
-<body>
-    <!-- Header with Navigation -->
+<body >
     <header>
         <nav>
-            <a href="/biodata.html">About</a>
-            <a href="/hobbies.html">Hobby</a>
-            <a href="/campuslife.html">Campus Life</a>
+            <a href="biodata.html">About</a>
+            <a href="hobbies.html">Hobby</a>
+            <a href="campuslife.html">Campus Life</a>
         </nav>
-
     </header>
-
-    <h1>My Biodata</h1>
-    <table border="1" style="width: 50%; background-color: powderblue;" width="100" height="700">
-        <tr>
-            <td><b>Name</b></td>
-            <td>Nurul Jannah</td>
-            <td><img src="me.jpg" style="width:100px; height:120px"></td>
-        </tr>
-        <tr>
-            <td><b>Date Of Birth</b></td>
-            <td colspan="2">7th July 2003</td>
-        </tr>
-        <tr>
-            <td><b>Religion</b></td>
-            <td colspan="2">Islam</td>
-        </tr>
-        <tr>
-            <td><b>Race</b></td>
-            <td colspan="2">Malay</td>
-        </tr>
-        <tr>
-            <td rowspan="4"><b>Address</b></td>
-            <td>Street</td>
-            <td>Taman Serai Permai</td>
-        </tr>
-        <tr>
-            <td>Town</td>
-            <td>Bagan Serai</td>
-        </tr>
-        <tr>
-            <td>District</td>
-            <td>Kerian</td>
-        </tr>
-        <tr>
-            <td>State</td>
-            <td>Perak Darul Ridzuan</td>
-        </tr>
-        <tr>
-            <td rowspan="3"><b>Contact</b></td>
-            <td>Mobile Phone</td>
-            <td>017-5175404</td>
-        </tr>
-        <tr>
-            <td>Social Media</td>
-            <td>FB: Nurul Jannah</td>
-        </tr>
-        <tr>
-            <td>Website</td>
-            <td><a href="https://github.com/JannahKZ/Lab_2">www.JannahKZ.com</a></td>
-        </tr>
-        <tr>
-            <td><b>Course And Institution</b></td>
-            <td colspan="2">BIP, UTHM</td>
-        </tr>
-        <tr>
-            <td><b>Programming Skills</b></td>
-            <td colspan="2">Java, C++</td>
-        </tr>
-        <tr>
-            <td><b>Personal Interest</b></td>
-            <td colspan="2">Cooking</td>
-        </tr>
-        <tr>
-            <td><b>Future Plan in 2025</b></td>
-            <td colspan="2">Intern</td>
-        </tr>
-    </table>
-    <footer>
-        <p>&copy; 2024 Nurul Jannah</p>
-    </footer>
+    <div class="center-container">
+        <h1>My Biodata</h1>
+        <table border="1" style="width: 50%; background-color: powderblue;" width="100" height="700">
+            <tr>
+                <td><b>Name</b></td>
+                <td>Nurul Jannah</td>
+                <td><img src="me.jpg" style="width:100px; height:120px"></td>
+            </tr>
+            <tr>
+                <td><b>Date Of Birth</b></td>
+                <td colspan="2">7th July 2003</td>
+            </tr>
+            <tr>
+                <td><b>Religion</b></td>
+                <td colspan="2">Islam</td>
+            </tr>
+            <tr>
+                <td><b>Race</b></td>
+                <td colspan="2">Malay</td>
+            </tr>
+            <tr>
+                <td rowspan="4"><b>Address</b></td>
+                <td>Street</td>
+                <td>Taman Serai Permai</td>
+            </tr>
+            <tr>
+                <td>Town</td>
+                <td>Bagan Serai</td>
+            </tr>
+            <tr>
+                <td>District</td>
+                <td>Kerian</td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td>Perak Darul Ridzuan</td>
+            </tr>
+            <tr>
+                <td rowspan="3"><b>Contact</b></td>
+                <td>Mobile Phone</td>
+                <td>017-5175404</td>
+            </tr>
+            <tr>
+                <td>Social Media</td>
+                <td>FB: Nurul Jannah</td>
+            </tr>
+            <tr>
+                <td>Website</td>
+                <td><a href="https://github.com/JannahKZ/Lab_2">www.JannahKZ.com</a></td>
+            </tr>
+            <tr>
+                <td><b>Course And Institution</b></td>
+                <td colspan="2">BIP, UTHM</td>
+            </tr>
+            <tr>
+                <td><b>Programming Skills</b></td>
+                <td colspan="2">Java, C++</td>
+            </tr>
+            <tr>
+                <td><b>Personal Interest</b></td>
+                <td colspan="2">Cooking</td>
+            </tr>
+            <tr>
+                <td><b>Future Plan in 2025</b></td>
+                <td colspan="2">Intern</td>
+            </tr>
+        </table>
+    </div>
+    <footer><p>&copy; 2024 Nurul Jannah</p></footer>
 </body>
 </html>

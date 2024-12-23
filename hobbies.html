@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobby | Nurul Jannah | UTHM</title>
-
-    <!-- External Stylesheets and Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    
     <style>
         /* Basic Reset */
         * {
@@ -38,17 +32,12 @@
             background: #2c3e50;
             color: white;
             display: grid;
-            grid-template-columns: 1fr auto;
+            justify-content: center;
             align-items: center;
             padding: 20px;
             position: sticky;
             top: 0;
             z-index: 1000;
-        }
-
-        header .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
         }
 
         nav {
@@ -181,9 +170,9 @@
     <!-- Header with Navigation -->
     <header>
         <nav>
-            <a href="/biodata.html"> About</a>
-            <a href="/hobbies.html"> Hobby</a>
-            <a href="/campuslife.html"> Campus Life</a>
+            <a href="biodata.html"> About</a>
+            <a href="hobbies.html"> Hobby</a>
+            <a href="campuslife.html"> Campus Life</a>
             
         </nav>
     </header>
